@@ -1,0 +1,105 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(wand.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+/* nav bar start */
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+}
+.nav .nav-item {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 8px;
+}
+.nav .nav-item:hover {
+  text-decoration: none;
+  color: darkslategray;
+  background-color: whitesmoke;
+}
+/* nav bar end */
+/* form start */
+
+/* profile image */
+#profile-container {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+}
+
+#profileImage {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#imageUpload {
+  margin-top: 30px;
+  background-color: whitesmoke;
+}
+
+/* other form elements */
+h3 {
+  color: white;
+}
+.container {
+  padding-top: 5%;
+}
+.ui {
+  background-color: darkslategrey;
+  padding: 30px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+.ui label {
+  color: white;
+}
+/* form end */
+
+/* footer stylings */
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  color: whitesmoke;
+  margin-top: 20px;
+}
+
+.footer .socials-icons a {
+  color: whitesmoke;
+}
+
+.footer .socials-icons a:hover {
+  color: goldenrod;
+}
+
+.footer .company-dets ul {
+  list-style-type: none;
+}
+
+.footer .company-dets li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer .company-dets li a:hover {
+  color: goldenrod;
+}

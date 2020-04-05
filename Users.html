@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Users</title>
+    <meta charset="utf-8" />
+    <!-- 3rd party css library -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- personal css -->
+    <link rel="stylesheet" type="text/css" href="Users.css" />
+  </head>
+  <body>
+    <!-- nav bar start -->
+    <div class="nav">
+      <div class="list-group list-group-horizontal">
+        <a class="nav-link" href="#"
+          ><img class="image" alt="logo" src="magic-rabbit.png"
+        /></a>
+        <a class="nav-item" href="#">Home</a>
+        <a class="nav-item" href="#">News Feed</a>
+        <a class="nav-item nav-link disabled" href="Users.html" id="current"
+          >Users</a
+        >
+        <a class="nav-item" href="#">Admin</a>
+      </div>
+    </div>
+    <!-- nav bar end -->
+    <!-- main container carrying cards -->
+    <div class="container">
+      <!-- main heading -->
+      <div class="row top">
+        <div class="col-lg-9">
+          <h1 class="main-heading">Meet Our Users</h1>
+        </div>
+        <div class="new-user col-lg-3">
+          <button type="button" class="btn btn-light">
+            <a href="Form.html">Create new user</a>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <!-- card 1 -->
+        <div class="card col-lg-3">
+          <div class="image">
+            <img class="image" src="Ben Benjamin.jpg" alt="Ben Benjamin" />
+            <h3>Ben Benjamin</h3>
+          </div>
+          <div class="content">
+            <!-- personal info -->
+            <p><i class="fas fa-envelope-square"></i> bennybanana@gmail.com</p>
+            <p><i class="fas fa-mobile-alt"></i> 079 068 157</p>
+            <p><i class="fas fa-phone-square"></i> 021 123 4567</p>
+            <!-- modal button -->
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="modal"
+              data-target="#ben"
+            >
+              Read More
+            </button>
+            <!-- delete button -->
+            <button
+              type="button"
+              class="delete"
+              data-toggle="modal"
+              data-target="#delete"
+            >
+              <i class="far fa-trash-alt"></i>
+            </button>
+            <!-- the modal -->
+            <div class="modal" id="ben">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- modal header -->
+                  <div class="modal-header">
+                    <img src="Ben Benjamin.jpg" alt="Ben Benjamin" />
+                    <h3 class="modal-title">Ben Benjamin</h3>
+                    <!-- x close button -->
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times
+                    </button>
+                  </div>
+                  <!-- modal body -->
+                  <div class="modal-body">
+                    <p>Email: bennybanana@gmail.com</p>
+                    <p>Cellphone number: 079 068 157</p>
+                    <p>Telephone number: 021 123 4567</p>
+                    <h5>Next of Kin:</h5>
+                    <p>Name: Lizzie September</p>
+                    <p>Relationship: Daughter</p>
+                    <p>Cellphone number: 066 999 2784</p>
+                    <p>Email: lizzthewizz@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="card col-lg-3">
+          <div class="image">
+            <img src="Odwa Christians.jpg" alt="Odwa Christians" />
+            <h3>Odwa Christians</h3>
+          </div>
+          <div class="content">
+            <!-- personal info -->
+            <p><i class="fas fa-envelope-square"></i> odwachrist@gmail.com</p>
+            <p><i class="fas fa-mobile-alt"></i> 086 175 2970</p>
+            <p><i class="fas fa-phone-square"></i> 032 835 8376</p>
+            <!-- modal button -->
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="modal"
+              data-target="#odwa"
+            >
+              Read More
+            </button>
+            <!-- delete button -->
+            <button
+              type="button"
+              class="delete"
+              data-toggle="modal"
+              data-target="#delete"
+            >
+              <i class="far fa-trash-alt"></i>
+            </button>
+            <!-- the modal -->
+            <div class="modal" id="odwa">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- modal header -->
+                  <div class="modal-header">
+                    <img src="Odwa Christians.jpg" alt="Odwa Christians" />
+                    <h3 class="modal-title">Odwa Christians</h3>
+                    <!-- x close button -->
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times
+                    </button>
+                  </div>
+                  <!-- modal body -->
+                  <div class="modal-body">
+                    <p>Email: odwachrist@gmail.com</p>
+                    <p>Cellphone number: 086 175 2970</p>
+                    <p>Telephone number: 032 835 8376</p>
+                    <h5>Next of Kin:</h5>
+                    <p>Name: Nandipha Christians</p>
+                    <p>Relationship: Wife</p>
+                    <p>Cellphone number: 089 880 4764</p>
+                    <p>Email: nandiphachrist29@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="card col-lg-3">
+          <div class="image">
+            <img src="Annetjie Lukas.jpg" alt="Annetjie Lukas" />
+            <h3>Annetjie Lukas</h3>
+          </div>
+          <div class="content">
+            <!-- personal info -->
+            <p><i class="fas fa-envelope-square"></i> annie404@yahoo.com</p>
+            <p><i class="fas fa-mobile-alt"></i> 073 987 6543</p>
+            <p><i class="fas fa-phone-square"></i> 021 938 5789</p>
+            <!-- modal button -->
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="modal"
+              data-target="#annetjie"
+            >
+              Read More
+            </button>
+            <!-- delete button -->
+            <button
+              type="button"
+              class="delete"
+              data-toggle="modal"
+              data-target="#delete"
+            >
+              <i class="far fa-trash-alt"></i>
+            </button>
+            <!-- the modal -->
+            <div class="modal" id="annetjie">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- modal header -->
+                  <div class="modal-header">
+                    <img src="Annetjie Lukas.jpg" alt="Annetjie Lukas" />
+                    <h3 class="modal-title">Annetjie Lukas</h3>
+                    <!-- x close button -->
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times
+                    </button>
+                  </div>
+                  <!-- modal body -->
+                  <div class="modal-body">
+                    <p>Email: annie404@yahoo.com</p>
+                    <p>Cellphone number: 073 987 6543</p>
+                    <p>Telephone number: 021 938 5789</p>
+                    <h5>Next of Kin:</h5>
+                    <p>Name: Hettie Wessels</p>
+                    <p>Relationship: Sister</p>
+                    <p>Cellphone number: 076 543 2202</p>
+                    <p>Email: jyhetwessels@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <!-- card 4 -->
+        <div class="card col-lg-3">
+          <div class="image">
+            <img src="Dawid Bluyn.jpg" alt="Dawid Bluyn" />
+            <h3>Dawid Bluyn</h3>
+          </div>
+          <div class="content">
+            <!-- personal info -->
+            <p>
+              <i class="fas fa-envelope-square"></i> dawidbluyn@Woodcrafts.com
+            </p>
+            <p><i class="fas fa-mobile-alt"></i> 064 957 2785</p>
+            <p><i class="fas fa-phone-square"></i> 021 864 2843</p>
+            <!-- modal button -->
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="modal"
+              data-target="#dawid"
+            >
+              Read More
+            </button>
+            <!-- delete button -->
+            <button
+              type="button"
+              class="delete"
+              data-toggle="modal"
+              data-target="#delete"
+            >
+              <i class="far fa-trash-alt"></i>
+            </button>
+            <!-- the modal -->
+            <div class="modal" id="dawid">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- modal header -->
+                  <div class="modal-header">
+                    <img src="Dawid Bluyn.jpg" alt="Dawid Bluyn" />
+                    <h3 class="modal-title">Dawid Bluyn</h3>
+                    <!-- x close button -->
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times
+                    </button>
+                  </div>
+                  <!-- modal body -->
+                  <div class="modal-body">
+                    <p>Email: dawidbluyn@Woodcrafts.com</p>
+                    <p>Cellphone number: 064 957 2785</p>
+                    <p>Telephone number: 021 864 2843</p>
+                    <h5>Next of Kin:</h5>
+                    <p>Name: Jessika Bluyn</p>
+                    <p>Relationship: Mother</p>
+                    <p>Cellphone number: 088 776 3575</p>
+                    <p>Email: jess@hotmotel.co.za</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="card col-lg-3">
+          <div class="image">
+            <img src="Andiswa Ndlovu.jpg" alt="Andiswa Ndlovu" />
+            <h3>Andiswa Ndlovu</h3>
+          </div>
+          <div class="content">
+            <!-- personal info -->
+            <p><i class="fas fa-envelope-square"></i> andindlovu@gmail.com</p>
+            <p><i class="fas fa-mobile-alt"></i> 066 938 8888</p>
+            <p><i class="fas fa-phone-square"></i> 040 758 3954</p>
+            <!-- modal button -->
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="modal"
+              data-target="#andiswa"
+            >
+              Read More
+            </button>
+            <!-- delete button -->
+            <button
+              type="button"
+              class="delete"
+              data-toggle="modal"
+              data-target="#delete"
+            >
+              <i class="far fa-trash-alt"></i>
+            </button>
+            <!-- the modal -->
+            <div class="modal" id="andiswa">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- modal header -->
+                  <div class="modal-header">
+                    <img src="Andiswa Ndlovu.jpg" alt="Andiswa Ndlovu" />
+                    <h3 class="modal-title">Andiswa Ndlovu</h3>
+                    <!-- x close button -->
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times
+                    </button>
+                  </div>
+                  <!-- modal body -->
+                  <div class="modal-body">
+                    <p>Email: andindlovu@gmail.com</p>
+                    <p>Cellphone number: 066 938 8888</p>
+                    <p>Telephone number: 040 758 3954</p>
+                    <h5>Next of Kin:</h5>
+                    <p>Name: Jackson Ndlovu</p>
+                    <p>Relationship: Husband</p>
+                    <p>Cellphone number: 069 184 0378</p>
+                    <p>Email: jackjack@outlook.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 6 -->
+        <div class="card col-lg-3">
+          <div class="image">
+            <img src="Harold Houdin.jpg" alt="Harold Houdin" />
+            <h3>Harold Houdin</h3>
+          </div>
+          <div class="content">
+            <!-- personal info -->
+            <p><i class="fas fa-envelope-square"></i> heroharry@outlook.com</p>
+            <p><i class="fas fa-mobile-alt"></i> 087 000 8367</p>
+            <p><i class="fas fa-phone-square"></i> 031 847 3677</p>
+            <!-- modal button -->
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="modal"
+              data-target="#harold"
+            >
+              Read More
+            </button>
+            <!-- delete button -->
+            <button
+              type="button"
+              class="delete"
+              data-toggle="modal"
+              data-target="#delete"
+            >
+              <i class="far fa-trash-alt"></i>
+            </button>
+            <!-- the modal -->
+            <div class="modal" id="harold">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- modal header -->
+                  <div class="modal-header">
+                    <img src="Harold Houdin.jpg" alt="Harold Houdin" />
+                    <h3 class="modal-title">Harold Houdin</h3>
+                    <!-- x close button -->
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times
+                    </button>
+                  </div>
+                  <!-- modal body -->
+                  <div class="modal-body">
+                    <p>Email: heroharry@outlook.com</p>
+                    <p>Cellphone number: 087 000 8367</p>
+                    <p>Telephone number: 031 847 3677</p>
+                    <h5>Next of Kin:</h5>
+                    <p>Name: Martin Grey</p>
+                    <p>Relationship: Husband</p>
+                    <p>Cellphone number: 077 884 9174</p>
+                    <p>Email: greymartini@dungeonnightclub.co.za</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <!-- card 7 -->
+        <div class="card col-lg-3">
+          <div class="image">
+            <img src="Precious Koki.jpg" alt="Precious Koki" />
+            <h3>Precious Koki</h3>
+          </div>
+          <div class="content">
+            <!-- personal info -->
+            <p><i class="fas fa-envelope-square"></i> precious21@gmail.com</p>
+            <p><i class="fas fa-mobile-alt"></i> 088 876 7765</p>
+            <p><i class="fas fa-phone-square"></i> 021 987 7654</p>
+            <!-- modal button -->
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="modal"
+              data-target="#precious"
+            >
+              Read More
+            </button>
+            <!-- delete button -->
+            <button
+              type="button"
+              class="delete"
+              data-toggle="modal"
+              data-target="#delete"
+            >
+              <i class="far fa-trash-alt"></i>
+            </button>
+            <!-- the modal -->
+            <div class="modal" id="precious">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- modal header -->
+                  <div class="modal-header">
+                    <img src="Precious Koki.jpg" alt="Precious Koki" />
+                    <h3 class="modal-title">Precious Koki</h3>
+                    <!-- x close button -->
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times
+                    </button>
+                  </div>
+                  <!-- modal body -->
+                  <div class="modal-body">
+                    <p>Email: precious21@gmail.com</p>
+                    <p>Cellphone number: 088 876 7765</p>
+                    <p>Telephone number: 021 987 7654</p>
+                    <h5>Next of Kin:</h5>
+                    <p>Name: Prince Koki</p>
+                    <p>Relationship: Son</p>
+                    <p>Cellphone number: 087 101 1011</p>
+                    <p>Email: princeofdarkness@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 8 -->
+        <div class="card col-lg-3">
+          <div class="image">
+            <img src="Harris Potgieter.jpg" alt="Harris Potgieter" />
+            <h3>Harris Potgieter</h3>
+          </div>
+          <div class="content">
+            <!-- personal info -->
+            <p>
+              <i class="fas fa-envelope-square"></i>
+              HarrisP@HarrysWorld.co.za
+            </p>
+            <p><i class="fas fa-mobile-alt"></i> 065 098 7098</p>
+            <p><i class="fas fa-phone-square"></i> 021 986 3578</p>
+            <!-- modal button -->
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="modal"
+              data-target="#harris"
+            >
+              Read More
+            </button>
+            <!-- delete button -->
+            <button
+              type="button"
+              class="delete"
+              data-toggle="modal"
+              data-target="#delete"
+            >
+              <i class="far fa-trash-alt"></i>
+            </button>
+            <!-- the modal -->
+            <div class="modal" id="harris">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- modal header -->
+                  <div class="modal-header">
+                    <img src="Harris Potgieter.jpg" alt="Harris Potgieter" />
+                    <h3 class="modal-title">Harris Potgieter</h3>
+                    <!-- x close button -->
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times
+                    </button>
+                  </div>
+                  <!-- modal body -->
+                  <div class="modal-body">
+                    <p>Email: HarrisP@HarrysWorld.co.za</p>
+                    <p>Cellphone number: 065 098 7098</p>
+                    <p>Telephone number: 021 986 3578</p>
+                    <h5>Next of Kin:</h5>
+                    <p>Name: Lucille Potgieter</p>
+                    <p>Relationship: Wife</p>
+                    <p>Cellphone number: 060 825 9462</p>
+                    <p>Email: LucyPotgieter@yahoo.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 9 -->
+        <div class="card col-lg-3">
+          <div class="image">
+            <img src="Kelsey Jenkins.jpg" alt="Kelsey Jenkins" />
+            <h3>Kelsey Jenkins</h3>
+          </div>
+          <div class="content">
+            <!-- personal info -->
+            <p><i class="fas fa-envelope-square"></i> kellynelly@gmail.com</p>
+            <p><i class="fas fa-mobile-alt"></i> 078 764 0894</p>
+            <p><i class="fas fa-phone-square"></i> 021 976 4567</p>
+            <!-- modal button -->
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="modal"
+              data-target="#kelsey"
+            >
+              Read More
+            </button>
+            <!-- delete button -->
+            <button
+              type="button"
+              class="delete"
+              data-toggle="modal"
+              data-target="#delete"
+            >
+              <i class="far fa-trash-alt"></i>
+            </button>
+            <!-- the modal -->
+            <div class="modal" id="kelsey">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- modal header -->
+                  <div class="modal-header">
+                    <img src="Kelsey Jenkins.jpg" alt="Kelsey Jenkins" />
+                    <h3 class="modal-title">Kelsey Jenkins</h3>
+                    <!-- x close button -->
+                    <button type="button" class="close" data-dismiss="modal">
+                      &times
+                    </button>
+                  </div>
+                  <!-- modal body -->
+                  <div class="modal-body">
+                    <p>Email: kellynelly@gmail.com</p>
+                    <p>Cellphone number: 078 764 0894</p>
+                    <p>Telephone number: 021 976 4567</p>
+                    <h5>Next of Kin:</h5>
+                    <p>Name: Matthew Jenkins</p>
+                    <p>Relationship: Father</p>
+                    <p>Cellphone number: 085 836 8765</p>
+                    <p>Email: Matty61@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+    <!-- delete modal -->
+    <div class="modal" id="delete">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- modal header -->
+          <div class="modal-header">
+            <h3 class="modal-title">Delete User</h3>
+          </div>
+          <!-- modal body -->
+          <div class="modal-body">
+            <p>Are you sure you want to delete this user?</p>
+            <!-- yes button -->
+            <button type="button" class="yes btn-success">
+              Yes
+            </button>
+            <!-- no button -->
+            <button type="button" class="no btn-danger" data-dismiss="modal">
+              No
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="socials-icons">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-pinterest-square"></i></a>
+      </div>
+      <div class="company-dets">
+        <ul>
+          <li>Magic Rabbit <i class="far fa-copyright"> 2020</i></li>
+          <li><a href="#">Terms of Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- script import -->
+    <script
+      src="https://kit.fontawesome.com/c2c3ff7a30.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

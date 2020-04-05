@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New User</title>
+    <meta charset="utf-8" />
+    <!-- 3rd party css library -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- personal css -->
+    <link rel="stylesheet" type="text/css" href="Form.css" />
+  </head>
+
+  <body>
+    <!-- nav bar start -->
+    <div class="nav">
+      <div class="list-group list-group-horizontal">
+        <a class="nav-link" href="#"
+          ><img class="image" alt="logo" src="magic-rabbit.png"
+        /></a>
+        <a class="nav-item" href="#">Home</a>
+        <a class="nav-item" href="#">News Feed</a>
+        <a class="nav-item" href="Users.html">Users</a>
+        <a class="nav-item" href="#">Admin</a>
+      </div>
+    </div>
+    <!-- nav bar end -->
+    <!-- form container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <!-- form column -->
+        <div class="col-lg-8">
+          <div class="ui">
+            <!-- form start -->
+            <form action="/action/" class="was-validated">
+              <h3>New User Registration</h3>
+              <br />
+              <div class="row">
+                <div class="col-lg-8">
+                  <div id="profile-container">
+                    <label for="profile-pic">Profile Picture:</label>
+                    <image id="profileImage" src="blank-profile-picture.png" />
+                  </div>
+                  <input
+                    id="imageUpload"
+                    type="file"
+                    name="profile_photo"
+                    placeholder="Photo"
+                    required
+                    capture
+                  />
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="firstname">First Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter first name"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for="lastname">Last Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter last name"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+              </div>
+              <br />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter email"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">
+                Please fill out this field.
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="cell-no">Cellphone number:</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Enter cellphone number"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for="tel-no">Telephone number:</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Enter telephone number"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+              </div>
+              <br />
+              <label for="address">Home address:</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter home address"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">
+                Please fill out this field.
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="firstname">First Name of next of kin:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter first name"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for="lastname">Last Name of next of kin:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter last name"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="kin-relationship"
+                    >Relationship of next of kin:</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter relationship"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label for="kin-cell-number"
+                    >Cellphone number of next of kin:</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Enter cellphone number"
+                    required
+                  />
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Please fill out this field.
+                  </div>
+                </div>
+              </div>
+              <br />
+              <label for="email">Email of next of kin:</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter email"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">
+                Please fill out this field.
+              </div>
+              <br />
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="remember"
+                    required
+                  />
+                  I agree to the <a href="#">Terms and Conditions.</a>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">
+                    Check this box to continue.
+                  </div>
+                </label>
+              </div>
+              <br />
+              <input type="submit" class="btn btn-primary btn-block" />
+            </form>
+            <!-- form end -->
+          </div>
+        </div>
+        <!-- form column end -->
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+    <!-- form container end -->
+    <!-- footer -->
+    <div class="footer col-lg-2"></div>
+    <div class="footer col-lg-8">
+      <div class="socials-icons">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-pinterest-square"></i></a>
+      </div>
+      <div class="company-dets">
+        <ul>
+          <li>Magic Rabbit <i class="far fa-copyright"> 2020</i></li>
+          <li><a href="#">Terms of Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer col-lg-2"></div>
+    <!-- script import -->
+    <script
+      src="https://kit.fontawesome.com/c2c3ff7a30.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

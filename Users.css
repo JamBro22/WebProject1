@@ -1,0 +1,162 @@
+body {
+  background-image: url(wand.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: none;
+  padding: none;
+}
+/* nav bar start */
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+}
+.nav .nav-item {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 8px;
+}
+.nav .nav-item:hover {
+  text-decoration: none;
+  color: darkslategray;
+  background-color: whitesmoke;
+}
+#current {
+  background-color: whitesmoke;
+  color: darkslategray;
+}
+/* nav bar end */
+
+/* container elements styling */
+.container {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container .row .top {
+  margin-bottom: 5px;
+}
+
+.container .main-heading {
+  color: goldenrod;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 60px;
+  font-size: 60px;
+  text-shadow: 3px 3px black;
+}
+
+.container .new-user .btn {
+  float: right;
+}
+
+.container .new-user .btn:hover {
+  background-color: goldenrod;
+}
+
+.container .new-user .btn a {
+  text-decoration: none;
+  color: darkslateblue;
+}
+
+/* cards styling */
+.card {
+  align-items: center;
+  height: 475px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(247, 255, 137);
+}
+
+.card .image h3 {
+  text-align: center;
+}
+.card .image img {
+  height: 250px;
+  width: 250px;
+  border-radius: 10%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+/* modal styling */
+.close {
+  color: aliceblue;
+}
+
+.modal-content {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.modal-header h3 {
+  color: whitesmoke;
+  font-size: 50px;
+}
+.modal-header img {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.modal-body {
+  padding: 20px;
+}
+
+/* delete modal styling */
+#delete .modal-content {
+  background-color: whitesmoke;
+  color: black;
+}
+
+#delete .modal-header h3 {
+  color: black;
+  font-size: 50px;
+}
+
+/* footer stylings */
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  color: whitesmoke;
+  margin-top: 20px;
+}
+
+.footer .socials-icons a {
+  color: whitesmoke;
+}
+
+.footer .socials-icons a:hover {
+  color: goldenrod;
+}
+
+.footer .company-dets ul {
+  list-style-type: none;
+}
+
+.footer .company-dets li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer .company-dets li a:hover {
+  color: goldenrod;
+}

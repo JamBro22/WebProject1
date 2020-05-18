@@ -16,16 +16,16 @@
 
   <body>
     <!-- nav bar start -->
-    <div class="nav">
-      <div class="list-group list-group-horizontal">
-        <a class="nav-link" href="#"
-          ><img class="image" alt="logo" src="magic-rabbit.png"
-        /></a>
-        <a class="nav-item" href="#">Home</a>
-        <a class="nav-item" href="#">News Feed</a>
-        <a class="nav-item" href="Users.html">Users</a>
-        <a class="nav-item" href="#">Admin</a>
-      </div>
+    <nav class="nav"> 
+      <ul class="list-group list-group-horizontal">
+        <li><a class="nav-logo" href="#"><img class="image" alt="logo" src="magic-rabbit.png"
+          /></a></li>
+        <li><a class="nav-item" href="#">Home</a></li>
+        <li><a class="nav-item" href="#">News Feed</a></li>
+        <li><a class="nav-item" href="Users.html">Users</a></li>
+        <li><a class="nav-item" href="#">Admin</a></li>
+      </ul>
+    </nav>
     </div>
     <!-- nav bar end -->
     <!-- form container -->
@@ -36,7 +36,7 @@
         <div class="col-lg-8">
           <div class="ui">
             <!-- form start -->
-            <form action="/action/" class="was-validated">
+            <form action="/action/" class="was-validated" method="post">
               <h3>New User Registration</h3>
               <br />
               <div class="row">
@@ -62,6 +62,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    name="firstname"
                     placeholder="Enter first name"
                     required
                   />
@@ -75,6 +76,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    name="lastname"
                     placeholder="Enter last name"
                     required
                   />
@@ -89,6 +91,7 @@
               <input
                 type="email"
                 class="form-control"
+                name="email"
                 placeholder="Enter email"
                 required
               />
@@ -103,6 +106,7 @@
                   <input
                     type="tel"
                     class="form-control"
+                    name="cell-no"
                     placeholder="Enter cellphone number"
                     required
                   />
@@ -116,6 +120,7 @@
                   <input
                     type="tel"
                     class="form-control"
+                    name="tel-no"
                     placeholder="Enter telephone number"
                     required
                   />
@@ -130,6 +135,7 @@
               <input
                 type="text"
                 class="form-control"
+                name="address"
                 placeholder="Enter home address"
                 required
               />
@@ -144,6 +150,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    name="firstname-kin"
                     placeholder="Enter first name"
                     required
                   />
@@ -157,6 +164,7 @@
                   <input
                     type="text"
                     class="form-control"
+                    name="lastname-kin"
                     placeholder="Enter last name"
                     required
                   />
@@ -169,12 +177,13 @@
               <br />
               <div class="row">
                 <div class="col-lg-6">
-                  <label for="kin-relationship"
+                  <label for="relationship-kin"
                     >Relationship of next of kin:</label
                   >
                   <input
                     type="text"
                     class="form-control"
+                    name="relationship-kin"
                     placeholder="Enter relationship"
                     required
                   />
@@ -190,6 +199,7 @@
                   <input
                     type="tel"
                     class="form-control"
+                    name="cell-no-kin"
                     placeholder="Enter cellphone number"
                     required
                   />
@@ -200,10 +210,12 @@
                 </div>
               </div>
               <br />
+              <div class="col">
               <label for="email">Email of next of kin:</label>
               <input
                 type="email"
                 class="form-control"
+                name="email-kin"
                 placeholder="Enter email"
                 required
               />
@@ -211,6 +223,7 @@
               <div class="invalid-feedback">
                 Please fill out this field.
               </div>
+            </div>
               <br />
               <div class="form-group form-check">
                 <label class="form-check-label">

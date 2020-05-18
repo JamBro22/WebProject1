@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 50px;
+  height: 45px;
   z-index: 1;
 }
 .nav .nav-item {
@@ -36,6 +36,10 @@ body {
 #current {
   background-color: whitesmoke;
   color: darkslategray;
+}
+.list-group {
+  list-style: none;
+  align-items: flex-end;
 }
 /* nav bar end */
 
